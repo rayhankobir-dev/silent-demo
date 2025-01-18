@@ -1,0 +1,45 @@
+.downloadFilesComCon {
+    gap: 0rem;
+}
+.fileBox {
+    gap: 0rem;
+    margin: 1rem;
+    /*  border: 1px solid red; */
+}
+.downloadfilegap h3 {
+    font-size: 1.2rem;
+}
+.fileBoxicon {
+    padding: 1rem;
+    /*  border: 1px solid red; */
+}
+.fileBoxicon img {
+    width: 40px;
+}
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+
+    /* APPS CONTAINERS */
+    .appsComponentsCon {
+        gap: 1.4rem;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .fileBox {
+        gap: 0rem;
+        margin: 0.3rem;
+    }
+    .fileBoxicon {
+        padding: 0.5rem;
+        /*  border: 1px solid red; */
+    }
+    .fileBoxicon img {
+        width: 40px;
+    }
+    .fileBoxDes h3 {
+        font-size: 0.8rem;
+    }
+    .fileBoxDes p {
+        font-size: 0.7rem;
+    }
+}

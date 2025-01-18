@@ -1,0 +1,48 @@
+.browserContainer{
+ 
+  align-items: center;
+}
+.browserHeader{
+  width: 100%;
+  /* border: 1.5px solid #d0d4dd; */
+  /* border-radius: 8px; */
+  align-items: center;
+  padding: 1rem;
+}
+.browserHeader h3{
+  /* font-size: 1.2rem; 
+  font-weight: 500; */
+}
+
+/* browse history container */
+.browseHistoryCon{
+  width: 100%;
+  align-items: center;
+  
+  
+}
+.browseHistoryCol{
+  width: 100%;
+  padding: 0.8rem;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d0d4dd;
+}
+.browseHistoryDes{
+ /*  border: 1px solid black; */
+  align-items: start;
+}
+.browseHistoryDes h3{
+  /* display: flex; 
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700; */
+}
+.browseHistoryDes h3 span{
+  font-size: 1.5rem;
+}
+.browseHistoryDate{
+ /*  border: 1px solid black; */
+    align-items: start;
+}

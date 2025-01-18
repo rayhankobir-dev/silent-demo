@@ -1,0 +1,24 @@
+
+.webFilterContainer{
+  width: 100%;
+
+  
+}
+.webFilterHeader{
+  width: 100%;
+  align-items: center;
+  
+  border-bottom: 1px solid  #d0d4dd;
+}
+.webFilterHeader h3{
+  color: red;
+  /* font-size: 0.3rem;  */
+  font-weight: 500;
+}
+.webFilterHeader button{
+background-color: #172A6E;
+color: #fff;
+font-size: 1.5rem;
+padding: 8px;
+border-radius: 10px;
+}

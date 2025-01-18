@@ -1,0 +1,155 @@
+.Apps-container {
+    padding: 0rem 1rem;
+}
+.Apps-nav {
+    width: 100%;
+}
+.Apps-nav-left {
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-weight: 500;
+}
+.appsNavLeftIcon {
+    border: 1.5px solid #d0d4dd;
+    padding: 10px 10px;
+    border-radius: 6px;
+}
+
+.Apps-nav-right {
+    gap: 1rem;
+}
+.appsNavRightSearch {
+    align-items: center;
+    border: 1.5px solid #d0d4dd;
+    padding: 5px 10px;
+    gap: 0.5rem;
+    border-radius: 6px;
+}
+.appsNavRightSearch input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.appsNavRightSearch ::placeholder {
+    font-weight: 500;
+}
+.appsNavRightFilterIcon {
+    align-items: center;
+    border: 1.5px solid #d0d4dd;
+    padding: 5px 10px;
+    gap: 0.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+}
+.appsNavRightExportIcon {
+    align-items: center;
+    border: 1.5px solid #d0d4dd;
+    padding: 5px 10px;
+    gap: 0.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+/* ALL APPS CONTAINERS */
+.appsComponentsContainer {
+    justify-content: center;
+    align-items: center;
+}
+.appsComponentsCon {
+    margin-top: 2rem;
+    gap: 2rem 1rem;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+.appBox {
+    width: 125px;
+    gap: 1rem;
+    cursor: pointer;
+    align-items: center;
+}
+.appBoxicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200%;
+    font-size: 3.5rem;
+}
+.appBoxDes {
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+    .Apps-container {
+        padding: 0px;
+    }
+    .Apps-nav-left {
+        gap: 0.5rem;
+    }
+    /* HEADER NAV */
+    .responsiveTitleHide {
+        display: none;
+    }
+    .appsNavRightSearch input {
+        display: none;
+    }
+
+    /* COMPONENT LEFT */
+    .Apps-nav {
+        border-bottom: 1.5px solid #d0d4dd;
+    }
+    .appsNavLeftIcon {
+        border: 1.5px solid transparent;
+        padding: 5px;
+        border-radius: 6px;
+    }
+    /* APPS CONTAINERS */
+    .appsComponentsCon {
+        gap: 0.8rem;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .appBox {
+        width: 75px;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+    .appBoxicon {
+        font-size: 3rem;
+    }
+    .appBoxDes h3 {
+        font-size: 0.8rem;
+    }
+    .appBoxDes p {
+        font-size: 0.7rem;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  
+  .appsComponentsCon {
+    gap: 2rem;
+}
+    .appsRoutesCons {
+        width: 20vw;
+    }
+    .fi-appBox {
+        padding: 1rem 1rem 1rem 2rem;
+    }
+}
+
+/* Media query for desktop screens */
+@media only screen and (min-width: 768px) {
+    .appsRoutesHeader {
+        overflow: hidden;
+    }
+    .appsRoutesCons {
+        width: 23.8vw;
+    }
+}

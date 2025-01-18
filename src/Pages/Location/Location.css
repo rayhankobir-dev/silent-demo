@@ -1,0 +1,122 @@
+.Location-container {
+    padding: 1rem;
+}
+/* LOCATION HEADER */
+.locationHeader {
+    padding: 1rem;
+    /* border: 1px solid red; */
+    border-top: 1.5px solid #d0d4dd;
+    align-items: center;
+    justify-content: space-between;
+}
+/* LOCATION MAP */
+.LocationMapCon {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 0px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.LocationMapCon img {
+    width: 100%;
+    background-color: lightgray;
+}
+.LocationMapConBtn {
+    position: absolute;
+    top: 70%;
+    left: 41%;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 6px;
+    background-color: #ffff;
+    padding: 10px;
+    box-shadow: 0px 10px 10px -10px black;
+}
+
+.LocationHistoryHead {
+    align-items: center;
+    border: 1.5px solid #d0d4dd;
+    /* border-radius: 8px; */
+    padding: 0.7rem;
+}
+.LocationHistoryHead h3 {
+    /* font-size: 1rem; */
+    font-weight: 500;
+}
+
+.LocationHistoryBody {
+    /*   border: 1px solid black; */
+}
+.LocationHistoryCols{
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  padding: 1rem;
+
+}
+.LocationHistoryCols .locationhistoryImg{
+ width: 5rem; 
+ height: 4rem;
+ border-radius: 8px;
+ background: url("../../assets/images/map.png");
+ background-position: center;
+ background-size: cover;
+}
+.LocationHistoryCol {
+    width: 100%;
+    border: none;
+    padding: 0rem;
+}
+.LocationHistoryCol p {
+    /* font-size: 1.2rem; */
+    align-items: center;
+}
+.LiveCircleIcon {
+    width: 12px;
+    height: 12px;
+    border: none;
+    background-color: #13cd26;
+    border-radius: 50%;
+}
+.iconBlue {
+    width: 12px;
+    height: 12px;
+    border: none;
+    background-color: #4285F4;
+    border-radius: 50%;
+}
+.LocationHistoryCol h3 {
+    font-weight: 500;
+    /* font-size: 1.5rem; */
+}
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+    .Location-container {
+        padding: 0px;
+    }
+    /* LOCATION MAP */
+    .LocationMapCon {
+        height: 12rem;
+        border-radius: 16px;
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    .LocationMapConBtn {
+        top: 65%;
+        left: 27%;
+        border-radius: 6px;
+        padding: 8px 15px;
+    }
+
+    .LocationHistoryHead {
+        align-items: center;
+        border: none;
+        border-top: 1.5px solid #d0d4dd;
+        border-bottom: 1.5px solid #d0d4dd;
+        /* border-radius: 8px; */
+        padding: 1rem;
+    }
+}

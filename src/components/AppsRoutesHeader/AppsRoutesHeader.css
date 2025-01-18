@@ -1,0 +1,86 @@
+/* APPS HEADER ROUTES */
+.appsRoutesHeader {
+    width: 100%;
+    margin-top: 1.5rem;
+    /*  align-items: center; */
+    border: 1.5px solid #d0d4dd;
+    border-radius: 15px;
+    overflow: scroll;
+        justify-content: start;
+}
+.appsRoutesCons {
+    border-right: 1.5px solid #d0d4dd;
+    cursor: pointer;
+    min-width: 23vw;
+    padding: 1rem;
+}
+
+.appsRoutesCons:hover {
+    background-color: #e9ebff;
+}
+.appsRoutesCon h3 {
+    font-weight: 500;
+    font-size: 20px;
+}
+.appsRoutesCon p {
+    font-size: 16px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+    .appsRoutesHeader {
+        display: flex;
+        /*    align-items: start;
+     justify-content: start; */
+        border-radius: 0px;
+        margin-top: 0px;
+        border: none;
+        width: 100%;
+        overflow-x: scroll;
+        /*    white-space: nowrap; */
+        border-bottom: 1.5px solid #d0d4dd;
+    }
+    .appsRoutesHeader::-webkit-scrollbar {
+        display: none;
+    }
+    .appsRoutesCons {
+        padding: 0.7rem 1rem;
+    }
+    .lastAppsbox {
+        border-right: 0px;
+    }
+    .appsRoutesCons h3 {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .appsRoutesCons p {
+        font-size: 12px;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .appsRoutesHeader {
+        width: 100%;
+        /*   overflow: hidden; */
+        overflow: Scroll;
+    }
+    .appsRoutesCons {
+        width: 18vw;
+    }
+    .fi-appBox {
+        padding: 1rem 1rem 1rem 2rem;
+    }
+}
+
+/* Media query for desktop screens */
+@media only screen and (min-width: 768px) {
+    .appsRoutesHeader {
+      width: auto;
+        overflow: Scroll;
+    }
+    .appsRoutesCons {
+        width: 10vw;
+    }
+}

@@ -1,0 +1,92 @@
+.Location-nav {
+    width: 100%;
+}
+.Location-nav-left {
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-weight: 500;
+}
+.LocationNavLeftIcon {
+    border: 1.5px solid #d0d4dd;
+    padding: 10px 10px;
+    border-radius: 6px;
+}
+
+.Location-nav-right {
+    gap: 1rem;
+}
+.LocationNavRightSearch {
+    align-items: center;
+    border: 1.5px solid #d0d4dd;
+    padding: 5px 10px;
+    gap: 0.5rem;
+    border-radius: 6px;
+}
+.LocationNavRightSearch input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.LocationNavRightSearch ::placeholder {
+    font-weight: 500;
+}
+.LocationNavRightFilterIcon {
+    align-items: center;
+    border: 1.5px solid #d0d4dd;
+    padding: 5px 10px;
+    gap: 0.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+}
+.LocationNavRightExportIcon {
+    align-items: center;
+    border: 1.5px solid #d0d4dd;
+    padding: 5px 10px;
+    gap: 0.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+    .Location-nav-left {
+        gap: 0.5rem;
+    }
+    /* HEADER NAV */
+    .responsiveTitleHide {
+        display: none;
+    }
+    .LocationNavRightSearch input {
+        display: none;
+    }
+
+    /* COMPONENT LEFT */
+    .Location-nav {
+        border-bottom: 1.5px solid #d0d4dd;
+    }
+    .LocationNavLeftIcon {
+        border: 1.5px solid transparent;
+        padding: 5px;
+        border-radius: 6px;
+    }
+    /* Location CONTAINERS */
+    .Location h3 {
+        font-size: 0.8rem;
+    }
+    .Location p {
+        font-size: 0.7rem;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* Media query for desktop screens */
+@media only screen and (min-width: 768px) {
+  
+}

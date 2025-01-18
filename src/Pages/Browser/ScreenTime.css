@@ -1,0 +1,42 @@
+.screenTimeWrapper {
+    width: 100%;
+    padding: 1rem;
+    align-items: start;
+    justify-content: space-between;
+}
+/* LEFT */
+.screenTimeLeft {
+    width: 47%;
+    border-radius: 10px;
+/*   border: 1.5px solid #d0d4dd; */
+}
+.screenTimeLeft img{
+  width: 100%;
+}
+/* RIGHT */
+.screenTimeRight {
+    border-radius: 10px;
+    width: 45%;
+    border: 1.5px solid #d0d4dd;
+}
+.screenTimeRight h3{
+  font-size: 1.2rem; 
+  font-weight: 500;
+  padding: 0.5rem;
+}
+.screenTimeRight img{
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .screenTimeWrapper {
+   flex-direction: column;
+}
+.screenTimeLeft{
+  width: 100%;
+}
+.screenTimeRight{
+  margin-top: 2rem;
+  width: 100%;
+}
+}

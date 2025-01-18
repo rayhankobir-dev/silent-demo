@@ -1,0 +1,29 @@
+.browserHeader h3{
+ align-items: center;
+}
+.browserHeader h3 span{
+  font-size: 1.5rem; 
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+.flexStartData{
+  gap: 1rem;
+  justify-content: start;
+}
+.browseHistoryDate span{
+  font-size: 3rem;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+    .browserHeader h3{
+ align-items: center;
+ font-size: 1rem;
+}
+.browserHeader h3 span{
+  font-size: 1.3rem; 
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+}
