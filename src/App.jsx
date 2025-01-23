@@ -53,95 +53,107 @@ import LoginAndPassword from "./Pages/Apps/LoginAndPassword";
 import WifiLogger from "./Pages/Location/WifiLogger";
 import AppInformation from "./Pages/Apps/AppInformation";
 import LoginpassProfile from "./Pages/Apps/LoginpassProfile";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router basename="/demo">
       <Routes>
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Dashboard />} />
-          <Route path="devicecontrol" element={<DeviceControl />} />
-          <Route path="calls/callhistory" element={<Callhistory />} />
-          <Route path="call/callprofile" element={<CallProfile />} />
-          <Route path="calls/blockedcalls" element={<BlockedCalls />} />
-          <Route path="calls/facetime" element={<FaceTime />} />
-          <Route path="calls/forwardedcalls" element={<ForwardCalls />} />
-          <Route path="contacts/contactslist" element={<ContactList />} />
-          <Route path="contacts/contactprofile" element={<ContactProfile />} />
+          <Route path="/devicecontrol" element={<DeviceControl />} />
+          <Route path="/calls/callhistory" element={<Callhistory />} />
+          <Route path="/call/callprofile" element={<CallProfile />} />
+          <Route path="/calls/blockedcalls" element={<BlockedCalls />} />
+          <Route path="/calls/facetime" element={<FaceTime />} />
+          <Route path="/calls/forwardedcalls" element={<ForwardCalls />} />
+          <Route path="/contacts/contactslist" element={<ContactList />} />
+          <Route path="/contacts/contactprofile" element={<ContactProfile />} />
           <Route
-            path="contacts/blockedcontactprofile"
+            path="/contacts/blockedcontactprofile"
             element={<BlockedContactProfile />}
           />
-          <Route path="messages" element={<MessagesMain />} />
-          <Route path="network/mobile-network" element={<MobileMain />} />
-          <Route path="network/wifi-network" element={<WifiMain />} />
-          <Route path="network/data-usage" element={<DataMain />} />
-          <Route path="Camera/camera" element={<CameraMain />} />
-          <Route path="media/photos" element={<MediaMain />} />
-          <Route path="media/videos" element={<VideosMain />} />
-          <Route path="media/screenshots" element={<ScreenShotsMain />} />
-          <Route path="media/albums" element={<AlbumMain />} />
-          <Route path="calendar" element={<CalenderMain />} />
-          <Route path="contacts/blockedcontacts" element={<BlockedContact />} />
+          <Route path="/messages" element={<MessagesMain />} />
+          <Route path="/network/mobile-network" element={<MobileMain />} />
+          <Route path="/network/wifi-network" element={<WifiMain />} />
+          <Route path="/network/data-usage" element={<DataMain />} />
+          <Route path="/Camera/camera" element={<CameraMain />} />
+          <Route path="/media/photos" element={<MediaMain />} />
+          <Route path="/media/videos" element={<VideosMain />} />
+          <Route path="/media/screenshots" element={<ScreenShotsMain />} />
+          <Route path="/media/albums" element={<AlbumMain />} />
+          <Route path="/calendar" element={<CalenderMain />} />
           <Route
-            path="Privacy&Security/SavedPassword"
+            path="/contacts/blockedcontacts"
+            element={<BlockedContact />}
+          />
+          <Route
+            path="/Privacy&Security/SavedPassword"
             element={<SavedPassword />}
           />
-          <Route path="KeyLogger" element={<KeyLogger />} />
-          <Route path="SocialApps" element={<SocialApps />} />
-          <Route path="AllAllerts" element={<AllAllert />} />
-          <Route path="Alert&Notification/AllAllerts" element={<AllAllert />} />
+          <Route path="/KeyLogger" element={<KeyLogger />} />
+          <Route path="/SocialApps" element={<SocialApps />} />
+          <Route path="/AllAllerts" element={<AllAllert />} />
           <Route
-            path="Alert&Notification/NotificationSettings"
+            path="/Alert&Notification/AllAllerts"
+            element={<AllAllert />}
+          />
+          <Route
+            path="/Alert&Notification/NotificationSettings"
             element={<NotificationSetting />}
           />
           <Route
-            path="Alert&Notification/InstantAlerts"
+            path="/Alert&Notification/InstantAlerts"
             element={<InstantAlert />}
           />
-          <Route path="InstantAlerts" element={<InstantAlert />} />
-          <Route path="AppPermisions" element={<AppPermission />} />
+          <Route path="/InstantAlerts" element={<InstantAlert />} />
+          <Route path="/AppPermisions" element={<AppPermission />} />
           <Route
-            path="Privacy&Security/AppPermisions"
+            path="/Privacy&Security/AppPermisions"
             element={<PermisionManager />}
           />
-          <Route path="PermisionManager" element={<PermisionManager />} />
-          <Route path="Export" element={<Export />} />
-          <Route path="Payment" element={<Payment />} />
-          <Route path="apps/installedapp" element={<InstalledApp />} />
-          <Route path="Privacy&Security/Payment" element={<Payment />} />
-          <Route path="apps/uninstalledapp" element={<UnInstalledApp />} />
-          <Route path="apps/blockedapp" element={<BlockedApp />} />
-          <Route path="apps/loginandpassword" element={<LoginAndPassword />} />
+          <Route path="/PermisionManager" element={<PermisionManager />} />
+          <Route path="/Export" element={<Export />} />
+          <Route path="/Payment" element={<Payment />} />
+          <Route path="/apps/installedapp" element={<InstalledApp />} />
+          <Route path="/Privacy&Security/Payment" element={<Payment />} />
+          <Route path="/apps/uninstalledapp" element={<UnInstalledApp />} />
+          <Route path="/apps/blockedapp" element={<BlockedApp />} />
+          <Route path="/apps/loginandpassword" element={<LoginAndPassword />} />
           <Route
-            path="Apps/loginandpassword/profile"
+            path="/Apps/loginandpassword/profile"
             element={<LoginpassProfile />}
           />
 
-          <Route path="location" element={<Location />} />
-          <Route path="location/livelocation" element={<Location />} />
+          <Route path="/location" element={<Location />} />
+          <Route path="/location/livelocation" element={<Location />} />
           <Route
-            path="location/locationhistory"
+            path="/location/locationhistory"
             element={<LocationHistory />}
           />
-          <Route path="location/geofrence" element={<GeoFence />} />
-          <Route path="location/wifilogger" element={<WifiLogger />} />
-          <Route path="notes" element={<Notes />} />
-          <Route path="notesprofile" element={<NotesProfile />} />
-          <Route path="apps/allapps" element={<AllApps />} />
-          <Route path="browser/browserhistory" element={<BrowseHistory />} />
-          <Route path="browser/datausage" element={<BrowseDataUsage />} />
-          <Route path="browser/webfilters" element={<WebFilter />} />
-          <Route path="browser/screentime" element={<ScreenTime />} />
-          <Route path="files/allfiles" element={<AllFiles />} />
-          <Route path="files/downloads" element={<FilesDownload />} />
-          <Route path="apps/notification" element={<Appsnotification />} />
-          <Route path="apps/screentime" element={<Appsscreentime />} />
-          <Route path="apps/appinformation" element={<AppInformation />} />
+          <Route path="/location/geofrence" element={<GeoFence />} />
+          <Route path="/location/wifilogger" element={<WifiLogger />} />
+          <Route path="/notes" element={<Notes />} />
+          <Route path="/notesprofile" element={<NotesProfile />} />
+          <Route path="/apps/allapps" element={<AllApps />} />
+          <Route path="/browser/browserhistory" element={<BrowseHistory />} />
+          <Route path="/browser/datausage" element={<BrowseDataUsage />} />
+          <Route path="/browser/webfilters" element={<WebFilter />} />
+          <Route path="/browser/screentime" element={<ScreenTime />} />
+          <Route path="/files/allfiles" element={<AllFiles />} />
+          <Route path="/files/downloads" element={<FilesDownload />} />
+          <Route path="/apps/notification" element={<Appsnotification />} />
+          <Route path="/apps/screentime" element={<Appsscreentime />} />
+          <Route path="/apps/appinformation" element={<AppInformation />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
